@@ -1,0 +1,111 @@
+@charset "utf-8";
+.slider-rm-style {
+	position: relative;
+}
+.slider-big-img {
+	max-height: 530px;
+	overflow: hidden;
+	margin-bottom: 35px;
+	position: relative;
+}
+.slider-big-img::after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url(../img/plus-button.png) center center no-repeat;
+}
+.slider-big-img {
+	max-height: 530px;
+}
+.slider-big-img img {
+	width: 100%;
+}
+.slider-rm-style .slider-rm-ul > a {
+	overflow: hidden;
+	position: relative;
+	max-height: 154px;
+}
+.slider-rm-style .slider-rm-ul > a img {
+	width: 100%;
+}
+.slider-rm-style .slider-rm-ul > a .slide-overflow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(32, 38, 45, .6);
+	text-align: center;
+	color: #fff;
+}
+.slider-rm-style .slider-rm-ul > a .slide-overflow .slide-content {
+	/*margin-top: 25%;/*/
+}
+.slider-rm-style .slider-rm-ul > a .slide-overflow h1 {
+	margin: 0;
+}
+.slider-rm-style .slider-rm-ul > a:not(:first-child) {
+	margin-left: 28px;
+	/*padding-right: 30px;*/
+}
+.slider-rm-style .slider-rm-wrap-padding {
+	overflow: hidden;
+}
+.slider-rm-style>img {
+	display: block;
+	width: 100%;
+}
+.slider-rm-style .slider-rm-nav__prev {
+	position: absolute;
+	width: 16px;
+	height: 23px;
+	overflow: hidden;
+	bottom: 0;
+	left: 5px;
+	text-indent: -999px;
+	cursor: pointer;
+	background: url(../img/slider-arrow-left.png) center center no-repeat;
+	transform: translateY(47%);
+}
+.slider-rm-style .slider-rm-nav__next {
+	position: absolute;
+	width: 16px;
+	height: 23px;
+	overflow: hidden;
+	bottom: 0;
+	right: 5px;
+	text-indent: -999px;
+	cursor: pointer;
+	background: url(../img/slider-arrow-right.png) center center no-repeat;
+	transform: translateY(47%);
+}
+.slider-rm-style .slider-rm-bar {
+	position: relative;
+	max-width: 90%;
+	margin: 20px auto 0;
+	height: 1px;
+	/*overflow: hidden;*/
+	background: #000;
+}
+.slider-rm-style .slider-rm-bar__line {
+	position: absolute;
+	height: 20px;
+	left: 85px;
+	right: 85px;
+	top: 0;
+	transform: translateY(-50%);
+}
+.slider-rm-style .slider-rm-bar__handler {
+	position: absolute;
+	width: 170px;
+	height: 100%;
+	overflow: hidden;
+	left: 0;
+	top: 0;
+	margin-left: -85px;
+	background: #555;
+	cursor: pointer;
+}

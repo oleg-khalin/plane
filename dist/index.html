@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ArendaSamoleta</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fonts.css">
+</head>
+<body>
+	
+	<!-- ШАПКА -->
+	<header class="main-head">
+		<div class="head-top">
+			<div class="container-main container-main-top">
+
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-6">
+
+							<a href="index.html" class="logo">
+								<img src="img/logo.png" alt="ArendaSamoleta">
+							</a>
+
+						</div>
+						<div class="col-xs-6">
+							
+								<div class="head-location">
+									Вы находитесь в <b><img src="img/head-icon1.png" class="img-location" alt="location"> Москва</b> <img src="img/head-icon2.png" class="img-search" alt="search">
+								</div>
+
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+
+							<div class="head-window">
+								<p class="head-window-top">Уникальное предложение</p>
+								<h1>Арендуйте <b>Самолет</b></h1>
+								<p>Быстро, конфеденциально и в любую точку мира!</p>
+							</div>
+							<div class="buttons">
+								<a href="#" class="button-small">Обратная&nbsp;связь</a>
+								<a href="#" class="button-first">Заказать&nbsp;звонок</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="container-main">
+			<ul class="main-menu">
+				<li class="active">
+					<a href="index.html">Главная</a>
+				</li>
+				<li>
+					<a href="#">Аренда самолета</a>
+				</li>
+				<li>
+					<a href="#">Бизнес авиация</a>
+				</li>
+				<li>
+					<a href="#">Направления</a>
+				</li>
+				<li>
+					<a href="#">Empty leg</a>
+				</li>
+				<li>
+					<a href="#">Категории самолетов</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<!-- ШАПКА -->
+	
+	<section class="section-first">
+		<div class="container-main">
+			<form class="form-top" action="#">
+				<label>
+					<p>Пункт отправления</p>
+					<input placeholder="Москва" type="text" required>
+				</label>
+				<label>
+					<p>Пункт прибытия</p>
+					<input placeholder="Берлин" type="text" required>
+				</label>
+				<label>
+					<p>Дата</p>
+					<input type="text" class="date datepicker" required>
+				</label>
+				<label>
+					<p>Пассажиров</p>
+					<input placeholder="2" type="number" min="1" max="10" class="count">
+				</label>
+				<label>
+					<select>
+						<option>Туда и обратно</option>
+						<option>Туда</option>
+					</select>
+				</label>
+				<label>
+					<input type="button" class="button" value="Заказать">
+				</label>
+			</form>
+
+
+			<div class="tabs-main">
+				<div class="tabs">
+					<div class="tab">Вип чартер</div>
+					<div class="tab">Грузовой</div>
+					<div class="tab">Медицинский</div>
+				</div>
+				<div class="tabs-content">
+					<div class="tab-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<form class="form-tabs" action="#">
+							<label>
+								<p>Откуда</p>
+								<input type="text" class="from" placeholder="Москва" required>
+							</label>
+							<label>
+								<p>Куда</p>
+								<input type="text" class="to" placeholder="Берлин" required>
+							</label>
+							<label>
+								<p>Дата</p>
+								<input class="date datepicker" type="text" required>
+							</label>
+							<label>
+								<p>Время</p>
+								<input class="time" id="timepicker" type="text" required>
+							</label>
+							<label>
+								<input type="button" class="button-plus" value="+">
+							</label>
+							<br class="hidden-br">
+							<label>
+								<p>Кол-во пассажиров</p>
+								<input type="number" min="1" max="10" placeholder="2" class="count">
+							</label>
+							<label>
+								<p>С детьми или без</p>
+								<select class="children">
+									<option selected>С детьми</option>
+									<option>Без детей</option>
+								</select>
+							</label>
+							<label>
+								<p>Тип самолета</p>
+								<select class="plane-type">
+									<option selected>Легкий</option>
+									<option>Средний</option>
+									<option>Суперсредний</option>
+									<option>Большой</option>
+									<option>Трансконтинентальный</option>
+								</select>
+							</label>
+							<label>
+								<p>Самолет</p>
+								<select class="plane-name">
+									<option selected>Finairline</option>
+									<option>Finairline</option>
+									<option>Finairline</option>
+									<option>Finairline</option>
+									<option>Finairline</option>
+								</select>
+							</label>
+							<br class="hidden-br">
+							<label class="label-wraps">
+								<input type="text" placeholder="Имя" class="name">
+							</label>
+							<label class="label-wraps">
+								<input type="text" class="email" placeholder="E-mail">
+							</label>
+							<label class="label-wraps">
+								<input type="text" class="number" placeholder="Телефон">
+							</label>
+							<input type="button" class="button" value="Далее">
+						</form>
+					</div>
+					<div class="tab-content">2Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Взгляд образ заманивший это рыбными ты, рукопись силуэт буквенных. Великий ведущими несколько не, бросил там, взгляд последний назад за вершину?</div>
+					<div class="tab-content">3Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Взгляд образ заманивший это рыбными ты, рукопись силуэт буквенных. Великий ведущими несколько не, бросил там, взгляд последний назад за вершину?</div>
+				</div>
+			</div>
+		</div>
+		<div class="map hidden-sm hidden-xs">
+			<div class="container-main">
+				<p>Карта вашего полета</p>
+				<img src="img/map.png" alt="Map">
+				<p class="from-to">Москва - Берлин</p>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="section-second">
+		<div class="container-main">
+
+			<div class="container">
+				<div class="rwo">
+					<div class="col-md-6 col-md-push-6">
+						
+						<div class="img-wrap">
+							<img src="img/airplane.png" alt="Airplane">
+						</div>
+
+					</div>
+					<div class="col-md-6 col-md-pull-6">
+						
+						<h2>Удобство, качество,<br>гарантии!</h2>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scram</p>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="section-third">
+		<div class="container-main">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+
+						<p class="bold-uper">Empty Leg</p>
+						<p class="light">Что это такое?</p>
+
+					</div>
+					<div class="col-sm-10">
+
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discov</p>
+						<a href="#" class="button">Сделать&nbsp;заявку</a>
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="content-tabel">
+							<h2>Aктуальные <b>empty legs</b></h2>
+							<div class="a-wrap">
+								<a href="#">Все предложения</a>
+							</div>
+							<div class="c-a">
+								<div class="cell">
+									<div class="direction">Москва — Ларнака</div>
+									<div class="date">с 15 по 15 июля</div>
+									<div class="plane">Cessna Citation XLS</div>
+									<div class="price">13 000 EUR</div>
+								</div>
+								<a href="#" class="arrow">>></a>
+							</div>
+							<div class="c-a">
+								<div class="cell">
+									<div class="direction">Москва — Ницца</div>
+									<div class="date">с 16 по 16 июля</div>
+									<div class="plane">Challenger 850</div>
+									<div class="price">22 000 EUR</div>
+								</div>
+							<a href="#" class="arrow">>></a>
+							</div>
+							<div class="c-a">
+								<div class="cell">
+									<div class="direction">Санкт-Петербург — Париж</div>
+									<div class="date">с 17 по 17 июля</div>
+									<div class="plane">Cessna Citation XLS/XLS+</div>
+									<div class="price">15 000 EUR</div>
+								</div>
+								<a href="#" class="arrow">>></a>
+							</div>
+							<div class="c-a">
+								<div class="cell">
+									<div class="direction">Берн — Москва</div>
+									<div class="date">с 17 по 17 июля</div>
+									<div class="plane">Gulfstream G150</div>
+									<div class="price">17 000 EUR</div>
+								</div>
+								<a href="#" class="arrow">>></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<section class="section-fourth">
+		<div class="container-main">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="h2-wrap">
+							<h2>наши <b>самолеты</b></h2>
+						</div>
+					</div>
+				</div>
+				<div class="plane-type">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="img-wrap">
+								<img src="img/section1.png" alt="Plane1">
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<h4 class="h4">Легкие самолеты<span><img class="img-rotate" src="img/arrow-d.png" alt="Arrow"></span></h4>
+							<div class="h4-open-content1">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+								<div class="icons">
+									<div class="icon">
+										<img src="img/type-icon1.png" alt="Icon1"><br>
+										Комфорт
+									</div>
+									<div class="icon">
+										<img src="img/type-icon2.png" alt="Icon1"><br>
+										Экономия<br>времени
+									</div>
+									<div class="icon">
+										<img src="img/type-icon3.png" alt="Icon1"><br>
+										Связь
+									</div>
+								</div>
+							</div>
+							<div class="h4-open-content2">
+								<div class="row">
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<div class="img-plane-wrap">
+												<img src="img/plane-icon.jpg" alt="">
+											</div>
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="plane-type">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="img-wrap">
+								<img src="img/section2.png" alt="Plane2">
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<h4 class="h4">Средние самолеты<span><img class="img-rotate" src="img/arrow-d.png" alt="Arrow"></span></h4>
+							<div class="h4-open-content1">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+								<div class="icons">
+									<div class="icon">
+										<img src="img/type-icon1.png" alt="Icon1"><br>
+										Комфорт
+									</div>
+									<div class="icon">
+										<img src="img/type-icon2.png" alt="Icon1"><br>
+										Экономия<br>времени
+									</div>
+									<div class="icon">
+										<img src="img/type-icon3.png" alt="Icon1"><br>
+										Связь
+									</div>
+								</div>
+							</div>
+							<div class="h4-open-content2">
+								<div class="row">
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="plane-type">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="img-wrap">
+								<img src="img/section3.png" alt="Plane3">
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<h4 class="h4">Суперсредние самолеты<span><img class="img-rotate" src="img/arrow-d.png" alt="Arrow"></span></h4>
+							<div class="h4-open-content1">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+								<div class="icons">
+									<div class="icon">
+										<img src="img/type-icon1.png" alt="Icon1"><br>
+										Комфорт
+									</div>
+									<div class="icon">
+										<img src="img/type-icon2.png" alt="Icon1"><br>
+										Экономия<br>времени
+									</div>
+									<div class="icon">
+										<img src="img/type-icon3.png" alt="Icon1"><br>
+										Связь
+									</div>
+								</div>
+							</div>
+							<div class="h4-open-content2">
+								<div class="row">
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="plane-type">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="img-wrap">
+								<img src="img/section4.png" alt="Plane4">
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<h4 class="h4">Большие самолеты<span><img class="img-rotate" src="img/arrow-d.png" alt="Arrow"></span></h4>
+							<div class="h4-open-content1">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+								<div class="icons">
+									<div class="icon">
+										<img src="img/type-icon1.png" alt="Icon1"><br>
+										Комфорт
+									</div>
+									<div class="icon">
+										<img src="img/type-icon2.png" alt="Icon1"><br>
+										Экономия<br>времени
+									</div>
+									<div class="icon">
+										<img src="img/type-icon3.png" alt="Icon1"><br>
+										Связь
+									</div>
+								</div>
+							</div>
+							<div class="h4-open-content2">
+								<div class="row">
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="plane-type">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="img-wrap">
+								<img src="img/section5.png" alt="Plane5">
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<h4 class="h4">Трансконтинентальные самолеты<span><img class="img-rotate" src="img/arrow-d.png" alt="Arrow"></span></h4>
+							<div class="h4-open-content1">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+								<div class="icons">
+									<div class="icon">
+										<img src="img/type-icon1.png" alt="Icon1"><br>
+										Комфорт
+									</div>
+									<div class="icon">
+										<img src="img/type-icon2.png" alt="Icon1"><br>
+										Экономия<br>времени
+									</div>
+									<div class="icon">
+										<img src="img/type-icon3.png" alt="Icon1"><br>
+										Связь
+									</div>
+								</div>
+							</div>
+							<div class="h4-open-content2">
+								<div class="row">
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-6">
+										<div class="plane-types-more">
+											<img src="img/plane-icon.jpg" alt="">
+											<div class="content-type">
+												<h3>ТУ 154</h3>
+												<p>Lorem Ipsum is simply dummy text of the printing</p>
+												<a href="#">подробнее</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	
+
+	<section class="section-fifth">
+		<div class="container-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="h2-wrap">
+							<h2>Преимущества <b>аренды самолетов</b></h2>
+						</div>
+					</div>
+				</div>
+				<div class="plus">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="img-wrap">
+								<img src="img/plus1.png" alt="Plus1">
+							</div>
+						</div>
+						<div class="col-sm-8">
+							<h3>Экономия времени</h3>
+							<div class="col-sm-6">
+								Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
+							</div>
+							<div class="col-sm-6">
+								Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="plus">
+					<div class="row">
+						<div class="col-sm-4 col-sm-push-8">
+							<div class="img-wrap">
+								<img src="img/plus2.png" alt="Plus2">
+							</div>
+						</div>
+						<div class="col-sm-8 col-sm-pull-4">
+							<h3>комфорт и конфиденциальность</h3>
+							<div class="col-sm-6">
+								Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
+							</div>
+							<div class="col-sm-6">
+								Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="plus">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="img-wrap">
+								<img src="img/plus3.png" alt="Plus3">
+							</div>
+						</div>
+						<div class="col-sm-8">
+							<h3>кейтеринговое обслуживание</h3>
+							<div class="col-sm-6">
+								Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
+							</div>
+							<div class="col-sm-6">
+								Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="section-sixth">
+		<div class="container-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="h2-wrap">
+							<h2>популярные <b>Направления</b></h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="direction">
+						<div class="col-sm-4">
+							<div class="img-wrap">
+								<img src="img/direction1.jpg" alt="Direction1">
+								<div class="h3-wrap">
+									<h3>Париж</h3>
+									<p>О чем вам говорит это слово?</p>
+								</div>
+							</div>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+						</div>
+					</div>
+					<div class="direction">
+						<div class="col-sm-4">
+							<img src="img/direction2.jpg" alt="Direction2">
+							<div class="h3-wrap">
+								<h3>Амстердам</h3>
+								<p>О чем вам говорит это слово?</p>
+							</div>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+						</div>
+					</div>
+					<div class="direction">
+						<div class="col-sm-4">
+							<img src="img/direction3.jpg" alt="Direction3">
+							<div class="h3-wrap">
+								<h3>Копенгаген</h3>
+								<p>О чем вам говорит это слово?</p>
+							</div>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="section-seventh">
+		<div class="container-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="h2-wrap">
+							<h2><b>Статистика</b></h2>
+						</div>
+						<div class="icons">
+							<div class="icon">
+								<div class="img-wrap">
+									<img src="img/stat-icon1.png" alt="Icon1"><br>
+								</div>
+								Более 300<br>самолетов
+							</div>
+							<div class="icon">
+								<div class="img-wrap">
+									<img src="img/stat-icon2.png" alt="Icon2"><br>
+								</div>
+								Перелеты более<br>чем в 200 стран
+							</div>
+							<div class="icon">
+								<div class="img-wrap">
+									<img src="img/stat-icon3.png" alt="Icon3"><br>
+								</div>
+								Максимальная<br>дальность
+							</div>
+							<div class="icon">
+								<div class="img-wrap">
+									<img src="img/stat-icon4.png" alt="Icon4"><br>
+								</div>
+								Налет экипажей
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="main-foot">
+		<div class="container-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.<br>Richard McClintock.</p>
+						<p>&copy; 2016 All rights reserved</p>
+					</div>
+					<div class="col-sm-8">
+						<div class="links">
+							<a href="#">Ссылка 1</a>
+							<a href="#">Ссылка 2</a>
+							<a href="#">Ссылка 3</a>
+							<a href="#">Ссылка 4</a>
+						</div>
+						<div class="links">
+							<a href="#">Ссылка 1</a>
+							<a href="#">Ссылка 2</a>
+							<a href="#">Ссылка 3</a>
+							<a href="#">Ссылка 4</a>
+						</div>
+						<div class="links">
+							<a href="#">Ссылка 1</a>
+							<a href="#">Ссылка 2</a>
+							<a href="#">Ссылка 3</a>
+							<a href="#">Ссылка 4</a>
+						</div>
+						<div class="links">
+							<a href="#">Ссылка 1</a>
+							<a href="#">Ссылка 2</a>
+							<a href="#">Ссылка 3</a>
+							<a href="#">Ссылка 4</a>
+						</div>
+						<div class="links">
+							<a href="#">Ссылка 1</a>
+							<a href="#">Ссылка 2</a>
+							<a href="#">Ссылка 3</a>
+							<a href="#">Ссылка 4</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src='js/libs.min.js'></script>
+	<script src='js/common.js'></script>
+</body>
+</html>
